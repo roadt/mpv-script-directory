@@ -9,7 +9,7 @@ var main = (function () {
   var load = function () {
     return new Promise(function (resolve, reject) {
       var xhttp = new XMLHttpRequest() // eslint-disable-line no-undef
-      xhttp.open('GET', 'https://raw.githubusercontent.com/Nudin/mpv-script-directory/master/mpv_script_directory.json', true)
+      xhttp.open('GET', 'https://raw.githubusercontent.com/roadt/mpv-script-directory/master/mpv_script_directory.json', true)
       xhttp.onload = function () {
         if (xhttp.status === 200) {
           var rows = JSON.parse(xhttp.response)
